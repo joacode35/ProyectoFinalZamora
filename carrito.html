@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="carrito.css" />
+    <title>Tienda grafica</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logotipo">
+          <a href="./index.html"
+            ><img
+              class="logo"
+              src="./img/arte-moderno.png"
+              alt="Logo arte grafico"
+          /></a>
+          <h1>Graficarte</h1>
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              class="carritocss"
+              src="./img/anadir-al-carrito.png"
+              alt="carrito"
+            /><span id="contadorCarrito">0</span></a
+          >
+        </div>
+      </nav>
+    </header>
+    <section>
+      <article id="container"></article>
+      <article class="total">
+        <p>Total unidades: <span id="unidad">0</span></p>
+        <p>Total: $<span id="precio">0</span></p>
+        <button id="compra">Comprar</button>
+      </article>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+    <script src="./js/carritofuncion.js" defer></script>
+    <script src="./js/carritovisual.js" defer></script>
+  </body>
+</html>

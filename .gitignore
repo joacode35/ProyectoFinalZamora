@@ -1,0 +1,9 @@
+*.log
+*.DS_Store
+*.map
+*.vscode
+*.ai
+node_modules/
+fuentes/
+passwords.txt
+envio.php
