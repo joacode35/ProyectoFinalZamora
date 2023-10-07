@@ -15,10 +15,9 @@ let crearProductosHTML = () => {
     <img src=${item.img}>
     <h2>${item.nombre}</h3>
     <p>$${item.precio}</p>
-    <article>
-    
     <span class="contador">${item.cantidad} </span>
-    <button>X</button>
+    <article>
+    <button class="trash"><img src="./img/papelera.png" alt=""></button>
     </article>
     `;
       contenedorProductos.appendChild(productoNuevo);
@@ -51,32 +50,10 @@ let totalesFuncion = () => {
 
 totalesFuncion();
 
-compraMensaje.addEventListener("click", function (productos) {
-  if (productos.length > 1) {
-    Swal.fire({
-      icon: "success",
-      title: "Compra exitosa",
-      text: "¡Gracias por tu compra, llegara en 7 dias!",
-    });
-  } else {
-    Swal.fire({
-      icon: "error",
-      title: "Hubo un error...",
-      text: "Lo siento, no hay productos para vender.",
-    });
-  }
+compraMensaje.addEventListener("click", function () {
+  Swal.fire({
+    icon: "success",
+    title: "Compra exitosa",
+    text: "¡Gracias por tu compra, llegara en 7 dias!",
+  });
 });
-
-/*
-let compraAlert = () => {
-  if (productos.length > 0) {
-    Swal.fire({
-      icon: "success",
-      title: "Compra exitosa",
-      text: "¡Gracias por tu compra!",
-    });
-  }
-};
-
-compraAlert();
-*/

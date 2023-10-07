@@ -58,3 +58,16 @@ button {
   cursor: pointer;
   border-radius: 5px;
 }
+
+.trash {
+  display: flex;
+  justify-content: center;
+  width: 1rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.trash img {
+  width: 2rem;
+  height: 2rem;
+}
