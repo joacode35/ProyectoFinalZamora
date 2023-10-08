@@ -35,7 +35,7 @@
 }
 
 button {
-  background-color: #9757db;
+  background-color: #e2c6ff;
   border: none;
   color: #f1f4fe;
   padding: 8px 25px;
@@ -55,6 +55,7 @@ button {
 }
 
 #compra {
+  background-color: #9633ff;
   cursor: pointer;
   border-radius: 5px;
 }

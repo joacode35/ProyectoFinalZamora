@@ -20,10 +20,6 @@ let crearProductosHTML = (productos) => {
 
 crearProductosHTML(graficos);
 
-/*
-e90a3911f9c65a6fbb19a791e1e4d65e
-*/
-
 const informacion = (posicion) => {
   let lat = posicion.coords.latitude;
   let long = posicion.coords.longitude;
@@ -35,7 +31,7 @@ const informacion = (posicion) => {
     .then((response) => response.json())
     .then((data) => {
       footer.innerHTML = `<p>${data.name}</p>
-      <p>Temp: ${data.main.temp}º</p>
+      <p>  ${data.main.temp}º</p>
       `;
     });
 };

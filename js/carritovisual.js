@@ -17,7 +17,7 @@ let crearProductosHTML = () => {
     <p>$${item.precio}</p>
     <span class="contador">${item.cantidad} </span>
     <article>
-    <button class="trash"><img src="./img/papelera.png" alt=""></button>
+    <button class="trash"><img src="./img/basura.png" alt=""></button>
     </article>
     `;
       contenedorProductos.appendChild(productoNuevo);
@@ -52,8 +52,10 @@ totalesFuncion();
 
 compraMensaje.addEventListener("click", function () {
   Swal.fire({
+    color: "#fbf7ff",
     icon: "success",
-    title: "Compra exitosa",
+    title: "Compra efectuada",
     text: "¡Gracias por tu compra, llegara en 7 dias!",
+    background: "#5200a4",
   });
 });

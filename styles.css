@@ -39,6 +39,11 @@ a {
   width: 8rem;
 }
 
+.side {
+  display: flex;
+  align-items: center;
+}
+
 .carritocss {
   height: 3rem;
 }

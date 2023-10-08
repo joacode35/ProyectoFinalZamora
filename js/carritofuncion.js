@@ -67,5 +67,4 @@ let renovarNumeroCarrito = () => {
   );
   contadorCarritoElement.innerText = contador;
 };
-
 renovarNumeroCarrito();
