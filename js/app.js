@@ -1,6 +1,8 @@
+//Capto los elementos del html.
 let contenedorProductos = document.getElementById("container");
 let footer = document.getElementById("apikey");
 
+//Creo la lista de productos.
 let crearProductosHTML = (productos) => {
   productos.forEach((item) => {
     let productoNuevo = document.createElement("div");
@@ -20,6 +22,7 @@ let crearProductosHTML = (productos) => {
 
 crearProductosHTML(graficos);
 
+//Uso de api con fetch en el footer.
 const informacion = (posicion) => {
   let lat = posicion.coords.latitude;
   let long = posicion.coords.longitude;

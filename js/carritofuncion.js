@@ -1,3 +1,4 @@
+//Creo la funcion para añadir productos al localstorage y uso de toastify.
 let addCarrito = (producto) => {
   Toastify({
     text: "Producto agregado",
@@ -38,6 +39,7 @@ let addCarrito = (producto) => {
   return numeroCont;
 };
 
+//Funcion para eliminar item del localstorage y actualizar digitos.
 let delCarrito = (producto) => {
   let almacenar = JSON.parse(localStorage.getItem("items"));
   let cantidadProducto = almacenar.findIndex(
@@ -52,12 +54,14 @@ let delCarrito = (producto) => {
   renovarNumeroCarrito();
 };
 
+//Renovacion de la memoria de los productos.
 let renovarAlmacenamiento = (producto) => {
   let productoNuevo = producto;
   productoNuevo.cantidad = 1;
   return productoNuevo;
 };
 
+//Actualizar datos del contador.
 let contadorCarritoElement = document.getElementById("contadorCarrito");
 let renovarNumeroCarrito = () => {
   let almacenar = JSON.parse(localStorage.getItem("items"));

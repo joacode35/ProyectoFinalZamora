@@ -1,3 +1,4 @@
+//Lista de productos.
 let graficos = [
   {
     id: 1,

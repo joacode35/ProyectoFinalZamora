@@ -1,8 +1,10 @@
+//Capto los elementos del html.
 let contenedorProductos = document.getElementById("container");
 let contenedorUnidades = document.getElementById("unidad");
 let contenedorPrecio = document.getElementById("precio");
 let compraMensaje = document.getElementById("compra");
 
+//Traigo los datos del localstorage y los muestro en el carrito.
 let crearProductosHTML = () => {
   contenedorProductos.innerHTML = "";
   let productos = JSON.parse(localStorage.getItem("items"));
@@ -34,6 +36,7 @@ let crearProductosHTML = () => {
 
 crearProductosHTML();
 
+//Funcion para el total de la cantidad de productos.
 let totalesFuncion = () => {
   let productos = JSON.parse(localStorage.getItem("items"));
   let unidades = 0;
@@ -50,6 +53,7 @@ let totalesFuncion = () => {
 
 totalesFuncion();
 
+//Notificacion de compra con sweetalert2.
 compraMensaje.addEventListener("click", function () {
   Swal.fire({
     color: "#fbf7ff",
